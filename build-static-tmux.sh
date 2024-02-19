@@ -66,7 +66,7 @@ NCURSES_ARCHIVE="ncurses.tar.gz"
 NCURSES_URL="https://invisible-island.net/datafiles/release"
 
 LIBEVENT_ARCHIVE="libevent-${LIBEVENT_VERSION}-alpha-dev.tar.gz"
-LIBEVENT_URL="https://github.com/libevent/libevent/releases/download/release-${LIBEVENT_VERSION}-alpha-dev"
+LIBEVENT_URL="https://github.com/libevent/libevent/releases/download/release-${LIBEVENT_VERSION}-alpha"
 
 UPX_ARCHIVE="upx-${UPX_VERSION}-${ARCH}_${OS}.tar.xz"
 UPX_URL="https://github.com/upx/upx/releases/download/v${UPX_VERSION}"
