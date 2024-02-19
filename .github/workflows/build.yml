@@ -33,3 +33,8 @@ jobs:
           allowUpdates: true
           bodyFile: "README.md"
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Dev-Build
+        on:
+          create:
+            tags:
+              - v*
