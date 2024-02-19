@@ -65,7 +65,7 @@ MUSL_URL="https://www.musl-libc.org/releases"
 NCURSES_ARCHIVE="ncurses.tar.gz"
 NCURSES_URL="https://invisible-island.net/datafiles/release"
 
-LIBEVENT_ARCHIVE="libevent-${LIBEVENT_VERSION}-stable.tar.gz"
+LIBEVENT_ARCHIVE="libevent-${LIBEVENT_VERSION}-alpha.tar.gz"
 LIBEVENT_URL="https://github.com/libevent/libevent/releases/download/release-${LIBEVENT_VERSION}-alpha"
 
 UPX_ARCHIVE="upx-${UPX_VERSION}-${ARCH}_${OS}.tar.xz"
