@@ -45,7 +45,7 @@ TMUX_BIN="tmux.${OS}-${ARCH}"
 TMUX_VERSION=3.4
 MUSL_VERSION=1.2.4
 NCURSES_VERSION=6.4
-LIBEVENT_VERSION=2.1.12
+LIBEVENT_VERSION=2.2.1
 UPX_VERSION=4.2.2
 ######################################
 ####### END VERSION DEFINITION #######
@@ -66,7 +66,7 @@ NCURSES_ARCHIVE="ncurses.tar.gz"
 NCURSES_URL="https://invisible-island.net/datafiles/release"
 
 LIBEVENT_ARCHIVE="libevent-${LIBEVENT_VERSION}-stable.tar.gz"
-LIBEVENT_URL="https://github.com/libevent/libevent/releases/download/release-${LIBEVENT_VERSION}-stable"
+LIBEVENT_URL="https://github.com/libevent/libevent/releases/download/release-${LIBEVENT_VERSION}-alpha"
 
 UPX_ARCHIVE="upx-${UPX_VERSION}-${ARCH}_${OS}.tar.xz"
 UPX_URL="https://github.com/upx/upx/releases/download/v${UPX_VERSION}"
