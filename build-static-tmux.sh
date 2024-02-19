@@ -42,11 +42,11 @@ TMUX_BIN="tmux.${OS}-${ARCH}"
 ######################################
 ###### BEGIN VERSION DEFINITION ######
 ######################################
-TMUX_VERSION=3.3a
-MUSL_VERSION=1.2.3
-NCURSES_VERSION=6.3
+TMUX_VERSION=3.4
+MUSL_VERSION=1.2.4
+NCURSES_VERSION=6.4
 LIBEVENT_VERSION=2.1.12
-UPX_VERSION=4.0.0
+UPX_VERSION=4.2.2
 ######################################
 ####### END VERSION DEFINITION #######
 ######################################
