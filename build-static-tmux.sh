@@ -208,7 +208,7 @@ rm -rf ${LOG_DIR:?}/*
 
 rm -rf ${TMUX_STATIC_HOME:?}/src/upx-${UPX_VERSION}-amd64_linux
 rm -rf ${TMUX_STATIC_HOME:?}/src/musl-${MUSL_VERSION}
-rm -rf ${TMUX_STATIC_HOME:?}/src/libevent-${LIBEVENT_VERSION}-stable
+rm -rf ${TMUX_STATIC_HOME:?}/src/libevent-${LIBEVENT_VERSION}-alpha
 rm -rf ${TMUX_STATIC_HOME:?}/src/ncurses-${NCURSES_VERSION}
 rm -rf ${TMUX_STATIC_HOME:?}/src/tmux-${TMUX_VERSION}
 
@@ -268,10 +268,10 @@ export CC="${TMUX_STATIC_HOME}/bin/musl-gcc -static"
 
 ###############################################################
 echo ""
-echo "libevent ${LIBEVENT_VERSION}-stable"
+echo "libevent ${LIBEVENT_VERSION}-alpha"
 echo "------------------"
 
-LOG_FILE="libevent-${LIBEVENT_VERSION}-stable.log"
+LOG_FILE="libevent-${LIBEVENT_VERSION}-alpha.log"
 
 cd ${TMUX_STATIC_HOME}/src || exit 1
 if [ ! -f ${LIBEVENT_ARCHIVE} ]; then
@@ -284,7 +284,7 @@ printf "Extracting...."
 tar xzf ${LIBEVENT_ARCHIVE}
 checkResult $?
 
-cd libevent-${LIBEVENT_VERSION}-stable || exit 1
+cd libevent-${LIBEVENT_VERSION}-alpha || exit 1
 
 printf "Configuring..."
 ./configure \
