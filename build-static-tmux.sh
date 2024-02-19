@@ -65,8 +65,8 @@ MUSL_URL="https://www.musl-libc.org/releases"
 NCURSES_ARCHIVE="ncurses.tar.gz"
 NCURSES_URL="https://invisible-island.net/datafiles/release"
 
-LIBEVENT_ARCHIVE="libevent-${LIBEVENT_VERSION}-alpha.tar.gz"
-LIBEVENT_URL="https://github.com/libevent/libevent/releases/download/release-${LIBEVENT_VERSION}-alpha"
+LIBEVENT_ARCHIVE="libevent-${LIBEVENT_VERSION}-alpha-dev.tar.gz"
+LIBEVENT_URL="https://github.com/libevent/libevent/releases/download/release-${LIBEVENT_VERSION}-alpha-dev"
 
 UPX_ARCHIVE="upx-${UPX_VERSION}-${ARCH}_${OS}.tar.xz"
 UPX_URL="https://github.com/upx/upx/releases/download/v${UPX_VERSION}"
@@ -208,7 +208,7 @@ rm -rf ${LOG_DIR:?}/*
 
 rm -rf ${TMUX_STATIC_HOME:?}/src/upx-${UPX_VERSION}-amd64_linux
 rm -rf ${TMUX_STATIC_HOME:?}/src/musl-${MUSL_VERSION}
-rm -rf ${TMUX_STATIC_HOME:?}/src/libevent-${LIBEVENT_VERSION}-alpha
+rm -rf ${TMUX_STATIC_HOME:?}/src/libevent-${LIBEVENT_VERSION}-alpha-dev
 rm -rf ${TMUX_STATIC_HOME:?}/src/ncurses-${NCURSES_VERSION}
 rm -rf ${TMUX_STATIC_HOME:?}/src/tmux-${TMUX_VERSION}
 
@@ -268,10 +268,10 @@ export CC="${TMUX_STATIC_HOME}/bin/musl-gcc -static"
 
 ###############################################################
 echo ""
-echo "libevent ${LIBEVENT_VERSION}-alpha"
+echo "libevent ${LIBEVENT_VERSION}-alpha-dev"
 echo "------------------"
 
-LOG_FILE="libevent-${LIBEVENT_VERSION}-alpha.log"
+LOG_FILE="libevent-${LIBEVENT_VERSION}-alpha-dev.log"
 
 cd ${TMUX_STATIC_HOME}/src || exit 1
 if [ ! -f ${LIBEVENT_ARCHIVE} ]; then
@@ -284,7 +284,7 @@ printf "Extracting...."
 tar xzf ${LIBEVENT_ARCHIVE}
 checkResult $?
 
-cd libevent-${LIBEVENT_VERSION}-alpha || exit 1
+cd libevent-${LIBEVENT_VERSION}-alpha-dev || exit 1
 
 printf "Configuring..."
 ./configure \
