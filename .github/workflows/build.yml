@@ -33,3 +33,4 @@ jobs:
           allowUpdates: true
           bodyFile: "README.md"
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
