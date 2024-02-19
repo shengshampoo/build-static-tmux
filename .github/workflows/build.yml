@@ -36,5 +36,5 @@ jobs:
       - name: Dev-Build
         on:
           create:
-            tags:
-              - v*
+          tags:
+          - v*
